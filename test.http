@@ -1,0 +1,26 @@
+### GET ALL USERS
+GET http://localhost:5000/users
+
+### GET SINGLE USER BY ID
+GET http://localhost:5000/users/id/92541
+
+### GET SINGLE USER BY NAME
+GET http://localhost:5000/users/name/Zeeshan Hussain
+
+### GET SINGLE USER BY ONBOARDED
+GET http://localhost:5000/users/onboarded/true
+
+### GET SINGLE USER BY NAME
+GET http://localhost:5000/users/height/5.8
+
+### ADD NEW USER
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "userId": 12345,
+    "name": "Maliha",
+    "designation": "Reporter",
+    "onboarded": true,
+    "height": 5.4
+}
